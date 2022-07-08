@@ -13,9 +13,14 @@ dp = Dispatcher(bot)
 
 
 
-@dp.message_handler(commands=['start', 'help'])
+@dp.message_handler(commands='start')
 async def send_welcome(message: types.Message):
-    await message.reply('Hi, I am bot')
+    keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True)
+    buttons =  ['Доход', 'Расход']
+    keyboard.add(*buttons)
+    await message.reply('Какую операцию вы хотите совершить', reply_markup=keyboard)
+
+
 
 
 @dp.message_handler()
