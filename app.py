@@ -19,15 +19,19 @@ async def send_welcome(message: types.Message):
     await message.reply('Какую операцию вы хотите совершить', reply_markup=keyboard)
      
 
+
+
 @dp.message_handler(lambda message: message.text == 'Доход')
 async def echo(message: types.Message):
    
    await message.reply("Отличный выбор!", reply_markup=types.ReplyKeyboardRemove())
 
 
+
 @dp.message_handler(lambda message: message.text == 'Расход')
 async def echo(message: types.Message):
    await message.reply("Не завидую", reply_markup=types.ReplyKeyboardRemove())
+
 
 
 if __name__ == '__main__':
