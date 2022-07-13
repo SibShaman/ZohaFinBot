@@ -1,17 +1,14 @@
-# from flask import Flask
+from flask import Flask
 import logging
 from aiogram import Bot, Dispatcher, executor, types
+from config import MY_API_KEY
 
-# from flask_sqlalchemy import SQLAlchemy
 
-
-# API бота моего
-API_TOKEN = '5589747357:AAEiA78ZprfPUZ_dSar5SVB_Nr6FRfgExyI'
 
 
 # подключение бота
 logging.basicConfig(level=logging.INFO)
-bot = Bot(token=API_TOKEN)
+bot = Bot(token=MY_API_KEY)
 dp = Dispatcher(bot)
 
 
