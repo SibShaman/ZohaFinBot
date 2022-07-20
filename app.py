@@ -1,4 +1,4 @@
-from flask import Flask
+# from flask import Flask
 import logging
 from aiogram import Bot, Dispatcher, executor, types
 from config import MY_API_KEY
