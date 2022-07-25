@@ -20,10 +20,8 @@ async def send_welcome(message: types.Message):
      
 
 
-
 @dp.message_handler(lambda message: message.text == 'Доход')
-async def echo(message: types.Message):
-   
+async def echo(message: types.Message):   
    await message.reply("Отличный выбор!", reply_markup=types.ReplyKeyboardRemove())
 
 
