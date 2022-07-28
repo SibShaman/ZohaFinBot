@@ -4,6 +4,10 @@ from aiogram import Bot, Dispatcher, executor, types
 from config import MY_API_KEY
 
 
+
+
+
+
 # подключение бота
 logging.basicConfig(level=logging.INFO)
 bot = Bot(token=MY_API_KEY)
