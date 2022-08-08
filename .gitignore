@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 config.py
 /__pycache__
 ENV/
 ТЗ с сушностями.docx
+=======
+/__pycache__
+env/
+config.py
+/db/service_db.py
+>>>>>>> updated bot structure
