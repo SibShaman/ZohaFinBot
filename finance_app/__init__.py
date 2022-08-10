@@ -1,3 +1,6 @@
+from finance_app.simple_handler import run_bot
+
+
 # Класс общий и для расходов и для доходов
 # Принимает сообщение (в двух видах  и текст)
 #                   1. В виде текстового сообщения (парсим текст) 
@@ -18,5 +21,5 @@
 #               - проект
 
 
-from finance_app.simple_handler import start_bot
+
 

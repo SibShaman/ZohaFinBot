@@ -12,7 +12,7 @@ app = Flask(__name__)
 # db = SQLAlchemy(app)
 
 
-finance_app.start_bot()
+finance_app.run_bot()
 
 
 

@@ -7,14 +7,14 @@
     # дальше ищет соответствие в базе данных 
     # и вставляет запись в соответствующую таблицу БД
 
-from finance_app.badget import Badget
+from project_basis.badget import Badget
 
 
 class Income(Badget):
         
     income_item = {
         'sale_capital_assets':[],           # - доходы от продажи основных средств
-        'sale_product':[],                  # - доходы от реализации товара
+        'sale_product':[],                  # - доходы от продажи товара
         'sale_service':[],                  # - доходы за оказание услуг
         'investment':[],                    # - инвестиции
         'credit':[],                        # - кредититование

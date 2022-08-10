@@ -4,7 +4,7 @@
 # ищет в БД соответствующую статью расхода
 # записывает если есть, если нет исключение (или в прочее)
 
-from finance_app.badget import Badget
+from project_basis.badget import Badget
 
 
 class Expense(Badget):
