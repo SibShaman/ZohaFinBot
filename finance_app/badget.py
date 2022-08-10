@@ -1,7 +1,10 @@
-class Badget:
+from abc import ABC
+
+
+class Badget(ABC):
   
     # конструктор класса - определяем словарь
-    def __init__(self, item: dict) -> dict:
+    def __init__(self, item: dict, ) -> dict:
         self.item = item
 
 

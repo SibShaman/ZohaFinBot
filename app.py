@@ -1,7 +1,9 @@
 from flask import Flask
 # from flask_sqlalchemy import SQLAlchemy
 # from db.service_db import mysql_connect
-from finance_app import executor, dp
+# from finance_app import executor, dp
+import finance_app
+
 
 app = Flask(__name__)
 
@@ -10,7 +12,9 @@ app = Flask(__name__)
 # db = SQLAlchemy(app)
 
 
-executor.start_polling(dp, skip_updates=True)
+finance_app.start_bot()
+
+
 
 if __name__=='__main__':
     app.run()
